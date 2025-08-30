@@ -10,11 +10,15 @@ use if "$]" >= 5.022, experimental => 're_strict';
 no if "$]" >= 5.031009, feature => 'indirect';
 no if "$]" >= 5.033001, feature => 'multidimensional';
 no if "$]" >= 5.033006, feature => 'bareword_filehandles';
+no if "$]" >= 5.041009, feature => 'smartmatch';
+no feature 'switch';
 use open ':std', ':encoding(UTF-8)'; # force stdin, stdout, stderr into utf8
 
-use Test::More 0.88;
+use Test2::V0;
 use if $ENV{AUTHOR_TESTING}, 'Test::Warnings';
 use JSON::Schema::Types;
 
+my $todo = todo('not yet implemented');
 fail('this test is TODO!');
+
 done_testing;
