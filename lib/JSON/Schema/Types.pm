@@ -5,7 +5,7 @@ package JSON::Schema::Types;
 # ABSTRACT: Create Type::Tiny types defined by JSON Schemas
 # KEYWORDS: JSON Schema types
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use 5.020;
 use strictures 2;
